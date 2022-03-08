@@ -11,8 +11,8 @@
   DTS:LocaleID="4106"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="80"
-  DTS:VersionGUID="{727D1FA8-3E23-421F-B3A0-A273AD5EF17A}">
+  DTS:VersionBuild="81"
+  DTS:VersionGUID="{A6947768-A171-4DB8-AB06-8DF0E817DDB4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -397,7 +397,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-R3QEO1F;Initial Catalog=Semi2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-R3QEO1F;Initial Catalog=Seminariodos201801397;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -3903,24 +3903,24 @@ where [refTable].[Dia] = ? and [refTable].[Mes] = ? and [refTable].[Año] = ?</p
                   startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Conversión WebProveedor.Outputs[Salida de conversión de datos]" />
                 <path
                   refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda3]"
-                  endId="Package\ForEach Compras\ETL_Compras_Dimensiones\BDD Producto.Inputs[Entrada de destino de OLE DB]"
+                  endId="Package\ForEach Compras\ETL_Compras_Dimensiones\BDD Tiempo.Inputs[Entrada de destino de OLE DB]"
                   name="Salida de entradas no coincidentes de búsqueda"
-                  startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Búsqueda Producto.Outputs[Salida de entradas no coincidentes de búsqueda]" />
+                  startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Búsqueda Tiempo.Outputs[Salida de entradas no coincidentes de búsqueda]" />
                 <path
                   refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda2]"
-                  endId="Package\ForEach Compras\ETL_Compras_Dimensiones\BDD Sucursal.Inputs[Entrada de destino de OLE DB]"
-                  name="Salida de entradas no coincidentes de búsqueda"
-                  startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Búsqueda Sucursal.Outputs[Salida de entradas no coincidentes de búsqueda]" />
-                <path
-                  refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda]"
                   endId="Package\ForEach Compras\ETL_Compras_Dimensiones\BDD Proveedor.Inputs[Entrada de destino de OLE DB]"
                   name="Salida de entradas no coincidentes de búsqueda"
                   startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Búsqueda Proveedor.Outputs[Salida de entradas no coincidentes de búsqueda]" />
                 <path
-                  refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda1]"
-                  endId="Package\ForEach Compras\ETL_Compras_Dimensiones\BDD Tiempo.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda]"
+                  endId="Package\ForEach Compras\ETL_Compras_Dimensiones\BDD Producto.Inputs[Entrada de destino de OLE DB]"
                   name="Salida de entradas no coincidentes de búsqueda"
-                  startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Búsqueda Tiempo.Outputs[Salida de entradas no coincidentes de búsqueda]" />
+                  startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Búsqueda Producto.Outputs[Salida de entradas no coincidentes de búsqueda]" />
+                <path
+                  refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda1]"
+                  endId="Package\ForEach Compras\ETL_Compras_Dimensiones\BDD Sucursal.Inputs[Entrada de destino de OLE DB]"
+                  name="Salida de entradas no coincidentes de búsqueda"
+                  startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Búsqueda Sucursal.Outputs[Salida de entradas no coincidentes de búsqueda]" />
                 <path
                   refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de multidifusión 1]"
                   endId="Package\ForEach Compras\ETL_Compras_Dimensiones\Duplicados Producto.Inputs[Entrada de ordenación]"
@@ -3943,24 +3943,24 @@ where [refTable].[Dia] = ? and [refTable].[Mes] = ? and [refTable].[Año] = ?</p
                   startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Multidifusión.Outputs[Salida de multidifusión 5]" />
                 <path
                   refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación3]"
+                  endId="Package\ForEach Compras\ETL_Compras_Dimensiones\Filtro NULLS Tiempo.Inputs[Entrada de división condicional]"
+                  name="Salida de ordenación"
+                  startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Duplicados Tiempo.Outputs[Salida de ordenación]" />
+                <path
+                  refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación]"
                   endId="Package\ForEach Compras\ETL_Compras_Dimensiones\Filtro NULLS Producto.Inputs[Entrada de división condicional]"
                   name="Salida de ordenación"
                   startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Duplicados Producto.Outputs[Salida de ordenación]" />
                 <path
-                  refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación]"
+                  refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación1]"
                   endId="Package\ForEach Compras\ETL_Compras_Dimensiones\Filtro NULLS Proveedor.Inputs[Entrada de división condicional]"
                   name="Salida de ordenación"
                   startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Duplicados Proveedor.Outputs[Salida de ordenación]" />
                 <path
-                  refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación1]"
+                  refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación2]"
                   endId="Package\ForEach Compras\ETL_Compras_Dimensiones\Filtro NULLS Sucursal.Inputs[Entrada de división condicional]"
                   name="Salida de ordenación"
                   startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Duplicados Sucursal.Outputs[Salida de ordenación]" />
-                <path
-                  refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación2]"
-                  endId="Package\ForEach Compras\ETL_Compras_Dimensiones\Filtro NULLS Tiempo.Inputs[Entrada de división condicional]"
-                  name="Salida de ordenación"
-                  startId="Package\ForEach Compras\ETL_Compras_Dimensiones\Duplicados Tiempo.Outputs[Salida de ordenación]" />
                 <path
                   refId="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de origen de archivo plano]"
                   endId="Package\ForEach Compras\ETL_Compras_Dimensiones\Multidifusión.Inputs[Entrada de Multidifusión 1]"
@@ -10167,22 +10167,22 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
                   name="NOT_NULL"
                   startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Filtro NULLS Tiempo.Outputs[NOT_NULL]" />
                 <path
-                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL3]"
+                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL1]"
                   endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Búsqueda Clientes.Inputs[Entrada de búsqueda]"
                   name="NOT_NULL"
                   startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Filtro NULLS Clientes.Outputs[NOT_NULL]" />
                 <path
-                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL4]"
+                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL2]"
                   endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\T-Vendedor.Inputs[Entrada de columna derivada]"
                   name="NOT_NULL"
                   startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Filtro NULLS Vendedor.Outputs[NOT_NULL]" />
                 <path
-                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL1]"
+                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL3]"
                   endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Búsqueda Sucursal.Inputs[Entrada de búsqueda]"
                   name="NOT_NULL"
                   startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Filtro NULLS Sucursal.Outputs[NOT_NULL]" />
                 <path
-                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL2]"
+                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL4]"
                   endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Búsqueda Producto.Inputs[Entrada de búsqueda]"
                   name="NOT_NULL"
                   startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Filtro NULLS Producto.Outputs[NOT_NULL]" />
@@ -10197,6 +10197,21 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
                   name="Salida de columna derivada"
                   startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\T-Vendedor.Outputs[Salida de columna derivada]" />
                 <path
+                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda3]"
+                  endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\BDD Tiempo.Inputs[Entrada de destino de OLE DB]"
+                  name="Salida de entradas no coincidentes de búsqueda"
+                  startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Búsqueda Tiempo.Outputs[Salida de entradas no coincidentes de búsqueda]" />
+                <path
+                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda2]"
+                  endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\BDD Vendedor.Inputs[Entrada de destino de OLE DB]"
+                  name="Salida de entradas no coincidentes de búsqueda"
+                  startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Búsqueda Vendedor.Outputs[Salida de entradas no coincidentes de búsqueda]" />
+                <path
+                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda4]"
+                  endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\BDD Producto.Inputs[Entrada de destino de OLE DB]"
+                  name="Salida de entradas no coincidentes de búsqueda"
+                  startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Búsqueda Producto.Outputs[Salida de entradas no coincidentes de búsqueda]" />
+                <path
                   refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda]"
                   endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\BDD Cliente.Inputs[Entrada de destino de OLE DB]"
                   name="Salida de entradas no coincidentes de búsqueda"
@@ -10206,21 +10221,6 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
                   endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\BDD Sucursal.Inputs[Entrada de destino de OLE DB]"
                   name="Salida de entradas no coincidentes de búsqueda"
                   startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Búsqueda Sucursal.Outputs[Salida de entradas no coincidentes de búsqueda]" />
-                <path
-                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda2]"
-                  endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\BDD Vendedor.Inputs[Entrada de destino de OLE DB]"
-                  name="Salida de entradas no coincidentes de búsqueda"
-                  startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Búsqueda Vendedor.Outputs[Salida de entradas no coincidentes de búsqueda]" />
-                <path
-                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda3]"
-                  endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\BDD Tiempo.Inputs[Entrada de destino de OLE DB]"
-                  name="Salida de entradas no coincidentes de búsqueda"
-                  startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Búsqueda Tiempo.Outputs[Salida de entradas no coincidentes de búsqueda]" />
-                <path
-                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda4]"
-                  endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\BDD Producto.Inputs[Entrada de destino de OLE DB]"
-                  name="Salida de entradas no coincidentes de búsqueda"
-                  startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Búsqueda Producto.Outputs[Salida de entradas no coincidentes de búsqueda]" />
                 <path
                   refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de multidifusión 1]"
                   endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Duplicados Clientes.Inputs[Entrada de ordenación]"
@@ -10247,6 +10247,11 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
                   name="Salida de multidifusión 5"
                   startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Multidifusión.Outputs[Salida de multidifusión 5]" />
                 <path
+                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de ordenación4]"
+                  endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Filtro NULLS Vendedor.Inputs[Entrada de división condicional]"
+                  name="Salida de ordenación"
+                  startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Duplicados Vendedor.Outputs[Salida de ordenación]" />
+                <path
                   refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de ordenación]"
                   endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Filtro NULLS Sucursal.Inputs[Entrada de división condicional]"
                   name="Salida de ordenación"
@@ -10266,11 +10271,6 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
                   endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Filtro NULLS Clientes.Inputs[Entrada de división condicional]"
                   name="Salida de ordenación"
                   startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Duplicados Clientes.Outputs[Salida de ordenación]" />
-                <path
-                  refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de ordenación4]"
-                  endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Filtro NULLS Vendedor.Inputs[Entrada de división condicional]"
-                  name="Salida de ordenación"
-                  startId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Duplicados Vendedor.Outputs[Salida de ordenación]" />
                 <path
                   refId="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[Salida de origen de archivo plano]"
                   endId="Package\ForEachVenta\ETL_Ventas_Dimensiones\Multidifusión.Inputs[Entrada de Multidifusión 1]"
@@ -12935,28 +12935,6 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación3]"
-          TopLeft="530.75,251">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40"
-              Start="0,0"
-              End="0,32.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación2]"
           TopLeft="1011.25,246">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12978,7 +12956,7 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación1]"
+          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación2]"
           TopLeft="784.5,250">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -13000,7 +12978,7 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación]"
+          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación1]"
           TopLeft="272.25,250">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -13013,6 +12991,28 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de ordenación]"
+          TopLeft="530.75,251">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40"
+              Start="0,0"
+              End="0,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13159,54 +13159,6 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda3]"
-          TopLeft="529.75,427">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,58"
-              Start="0,0"
-              End="0,50.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,50.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-106.8890234375,19.15234375,213.778046875,12.1953125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda2]"
-          TopLeft="781.5,430">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54"
-              Start="0,0"
-              End="0,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-106.8890234375,17.15234375,213.778046875,12.1953125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda1]"
           TopLeft="1014.75,528">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -13230,7 +13182,7 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda]"
+          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda2]"
           TopLeft="270.25,622">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -13250,6 +13202,54 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-106.8890234375,16.15234375,213.778046875,12.1953125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda1]"
+          TopLeft="781.5,430">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-106.8890234375,17.15234375,213.778046875,12.1953125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ForEach Compras\ETL_Compras_Dimensiones.Paths[Salida de entradas no coincidentes de búsqueda]"
+          TopLeft="529.75,427">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58"
+              Start="0,0"
+              End="0,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-106.8890234375,19.15234375,213.778046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -14491,7 +14491,7 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL3]"
+          Id="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL1]"
           TopLeft="137.5,333">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -14515,7 +14515,7 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL2]"
+          Id="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL4]"
           TopLeft="602.5,331">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -14539,7 +14539,7 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL1]"
+          Id="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL3]"
           TopLeft="830.75,331">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -14635,7 +14635,7 @@ where [refTable].[CodVendedor] = ? and [refTable].[Nombre] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL4]"
+          Id="Package\ForEachVenta\ETL_Ventas_Dimensiones.Paths[NOT_NULL2]"
           TopLeft="371.75,333">
           <EdgeLayout.Curve>
             <mssgle:Curve
