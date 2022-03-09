@@ -8,6 +8,9 @@ El proyecto OneSolution-BI, consiste en proveer una solución que resuelva los p
   <img src="./images/modelo.png" width="750"/>
 </p>
 
+Se implemento un modelo dimensional tipo constelacion ya que contamos con dos hechos (Ventas y Compras) para el analisis, y estos comparten la mitad de las dimensiones que son Sucursal,Tiempo y Producto
+
+
 ## Proceso ETL
 
 <p align="center">
