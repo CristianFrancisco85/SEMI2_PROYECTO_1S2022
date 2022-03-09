@@ -71,7 +71,7 @@ Adicionalmente
 - Para el sub-flujo de la dimension Vendedor se transforma el campo Vacacionista de string a integer
 - Para el sub-flujo de la dimension Tiempo se separa el campo Fecha en los campos Año,Mes,Dia
 
-## Creacion de Dimensiones - Ventas
+## Creacion de Hecho - Ventas
 <p align="center">
   <img src="./images/hecho_ventas.png" width="1000"/>
 </p>
