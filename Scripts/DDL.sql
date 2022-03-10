@@ -33,6 +33,7 @@ CREATE TABLE Sucursal (
     idSucursal INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
     CodSucursal NVARCHAR (150) NOT NULL,
     Nombre NVARCHAR (150) NOT NULL,
+    DireccionSucursal NVARCHAR (150) NOT NULL,
     Region NVARCHAR (150) NOT NULL,
     Departamento NVARCHAR (150) NOT NULL,
 );
